@@ -1,7 +1,6 @@
 html {
-  font-size: 16px;
+  font-size: 14px;
 }
-
 body {
   margin: 0;
   padding: 0;
@@ -9,14 +8,12 @@ body {
   font-size: 1rem;
   color: #444444;
 }
-
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Inter', sans-serif;
   font-weight: 600;
   color: #222222;
 
 }
-
 h1 { font-size: 2.5rem; }
 h2 { font-size: 2rem; }
 h3 { font-size: 1.75rem; }
@@ -24,6 +21,121 @@ h4 { font-size: 1.5rem; }
 h5 { font-size: 1.25rem; }
 h6 { font-size: 1rem; }
 
+#navbar {
+  padding: 8px;
+  margin: 0;
+}
+
+#logo-with-text{
+  display: none;
+}
+
+#banner {
+  object-fit: cover;
+  height: 150px;
+  width: 100%;
+}
+h1 {
+  text-align: center;
+  margin: 12px 0;
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 8px;
+}
+
+#description {
+  font-size: 1.25rem;
+}
+
+#team {
+  width: 100%;
+}
+
+#team-image {
+  border-radius: 5px;
+  width: 100%;
+}
+
+
+
+
+
+
+
+/* Base styles (extra small devices - mobile) */
+/* CSS rules */
+
+@media screen and (min-width:576px ){
+
+  html {
+    font-size: 16px;
+  }
+  #logo-with-text{
+    display: block;
+  }
+  #logo{
+    display: none;
+  }
+  #banner {
+    
+    height: 200px;
+    
+  }
+
+  h1 {
+    text-align: center;
+    margin: 16px 0;
+  }
+
+
+}
+
+@media screen and (min-width:768px ){
+  #banner {
+    
+    height: 250px;
+    
+  }
+
+  h1 {
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  #about {
+   
+    flex-direction: row;
+    max-width: 800px;
+  }
+  #description {
+    width: 50%;
+    padding-right: 8px;
+  }
+
+  #team{
+    width:50%;
+  }
+
+}
+
+
+@media screen and (min-width:992px ){
+  
+  html {
+    font-size: 20px;
+  }
+  #banner {
+    
+    height: 320px;
+    
+  }
+
+}
 
 a {
   text-decoration: none;
@@ -33,6 +145,27 @@ a {
 a:hover, a:focus {
   color: #1D4ED8;
 }
+
+
+#navbar {
+  padding: 8px;
+  margin: 0;
+}
+
+
+/*
+
+
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1rem; }
+
+
+
 
 #navbar {
   padding: 8px;
@@ -178,3 +311,4 @@ h3 {
   font-size: 0.875rem;
 }
 
+*/
